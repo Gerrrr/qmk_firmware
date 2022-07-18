@@ -66,11 +66,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |  ESC |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  TAB |      |      |DelLne|      |      |                    | PgUp |      |  Up  |PrvWrd|NxtWrd|      |
+ * |  TAB |      |      |DelLne|      |      |                    | PgUp |PrvWrd|NxtWrd|  Up  |LneBeg|LneEnd|
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | LCTRL|      |      |      |      | CpsLk|-------.    ,-------| PgDn | Left | Down | Right|      |      |
+ * | LCTRL|      |      |      |      | CpsLk|-------.    ,-------| PgDn |      | Left | Down | Right|      |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * |LShift| Undo | Cut  | Copy | Paste| Redo |-------|    |-------|      |LneBeg|LneEnd|      |      |      |
+ * |LShift| Undo | Cut  | Copy | Paste| Redo |-------|    |-------|      |      |      |      |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                | DEL | LGUI | LALT |LOWER| Space /       \Enter \  |RAISE |BackSP| RGUI | RALT |
  *                `--------------------------------'         '------------------------------------'
@@ -78,9 +78,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE] = LAYOUT(
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     KC_PGUP, XXXXXXX, KC_UP,   PRV_WRD, NXT_WRD, XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, DEL_LNE, XXXXXXX, KC_CAPS,                     KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
-    _______, UNDO,    CUT,     COPY,    PASTE,   REDO,     _______, _______,  XXXXXXX, LNE_BEG, LNE_END, XXXXXXX, XXXXXXX, XXXXXXX,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     KC_PGUP, PRV_WRD, NXT_WRD, KC_UP,   LNE_BEG, LNE_END,
+    _______, XXXXXXX, XXXXXXX, DEL_LNE, XXXXXXX, KC_CAPS,                     KC_PGDN, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,
+    _______, UNDO,    CUT,     COPY,    PASTE,   REDO,     _______, _______,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                       _______, _______, _______, _______,  _______, _______,  _______, _______, _______, _______
 ),
 /* ADJUST: RGB and media
