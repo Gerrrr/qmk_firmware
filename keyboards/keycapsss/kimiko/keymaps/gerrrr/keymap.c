@@ -182,7 +182,7 @@ const rgblight_segment_t PROGMEM raise_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 60, HSV_SPRINGGREEN}
 );
 const rgblight_segment_t PROGMEM adjust_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 60, HSV_GOLD}
+    {0, 60, HSV_PURPLE}
 );
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = {
